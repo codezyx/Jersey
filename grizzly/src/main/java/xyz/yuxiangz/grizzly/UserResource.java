@@ -15,7 +15,7 @@ public class UserResource {
 
     @POST
     @Path("/delete/{userId}")
-    @Produces(MediaType.TEXT_XML)
+    @Produces(MediaType.TEXT_PLAIN)
     public Object delete(@PathParam("userId") String userId) {
         return userId;
     }
